@@ -1,7 +1,12 @@
+-- Drop db if it exists
+DROP DATABASE IF EXISTS brewery_db;
+
 -- Create db
+CREATE DATABASE brewery_db;
 USE brewery_db;
 
--- Import table wizard with .csv file
+-- Run import table wizard with .csv file - name table us_city_data
+
 DELETE FROM brewery_db.us_city_data WHERE City IS NULL;
 
 -- Returns 994 NOT 1000; checked all other columns, this is good
